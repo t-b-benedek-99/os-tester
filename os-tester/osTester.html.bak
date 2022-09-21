@@ -1,0 +1,15 @@
+<html>
+<body>
+<div id="output1"></div>
+<div id="output2"></div>
+<script>
+var OS="Unknown";
+if (navigator.userAgent.indexOf("Win")!=-1) OS="Windows";
+if (navigator.userAgent.indexOf("Mac")!=-1) OS="MacOS";
+if (navigator.userAgent.indexOf("X11")!=-1) OS="UNIX";
+if (navigator.userAgent.indexOf("Linux")!=-1) OS="Linux";
+document.getElementById("output1").innerHTML="Hello";
+document.getElementById("output2").innerHTML=navigator.userAgent;
+</script>
+</body>
+</html>
